@@ -6,42 +6,8 @@ import SkillsGrid          from '@components/SkillsGrid'
 import ProjectsSection     from '@components/ProjectsSection'
 import ExperienceTimeline  from '@components/ExperienceTimeline'
 import ContactSection      from '@components/ContactSection'
-import type {
-  Project,
-} from '@/types'
 
-// ── Data ─────────────────────────────────────────────────────
-// Edit all content here — no need to touch individual components.
 
-const PROJECTS: Project[] = [
-  {
-    title:       'Portfolio Website',
-    description: 'This site — a modular React + TypeScript component system with a refined retro-futuristic aesthetic. Built as a reusable framework for future builds.',
-    tags:        ['React', 'TypeScript', 'Vite', 'CSS'],
-    liveHref:    '#',
-    repoHref:    '#',
-  },
-  {
-    title:       'Project Two',
-    description: 'Describe your project. What problem does it solve? Who is it for? What\'s the most interesting technical challenge you solved?',
-    tags:        ['React', 'Node.js', 'PostgreSQL'],
-    liveHref:    '#',
-    repoHref:    '#',
-  },
-  {
-    title:       'Project Three',
-    description: 'A tool, a visualization, an experiment. What\'s the interesting technical part? What did you learn building it?',
-    tags:        ['TypeScript', 'Canvas API', 'CSS'],
-    repoHref:    '#',
-  },
-  {
-    title:       'Project Four',
-    description: 'Keep shipping. Describe what you built, your stack choices, and what you\'d do differently with what you know now.',
-    tags:        ['React', 'Tailwind', 'Firebase'],
-    liveHref:    '#',
-    repoHref:    '#',
-  },
-]
 
 
 
@@ -129,7 +95,7 @@ export default function App() {
         <SkillsGrid />
 
         {/* Projects */}
-        <ProjectsSection projects={PROJECTS} />
+        <ProjectsSection />
 
         {/* Experience */}
         <ExperienceTimeline />
